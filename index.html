@@ -283,4 +283,15 @@
       console.error(error);
     }
   }  // ← function closes HERE, not after console.log
+   <audio id="bg-music" loop>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+      document.addEventListener('click', () => {
+        document.getElementById('bg-music').play();
+      }, { once: true });
 </script>
+
+
+</body>
+</html>
